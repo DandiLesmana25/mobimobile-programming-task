@@ -8,16 +8,20 @@ const routes: Routes = [
   // },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tabhome',
     pathMatch: 'full'
-  },
-  {
-    path: 'tab1',
-    loadChildren: () => import('./tab1/tab1.module').then( m => m.Tab1PageModule)
   },
   {
     path: 'tab2',
     loadChildren: () => import('./tab2/tab2.module').then( m => m.Tab2PageModule)
+  },
+  {
+    path: 'tabhome',
+    loadChildren: () => import('./tabhome/tabhome.module').then( m => m.TabhomePageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
 ];
 

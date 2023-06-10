@@ -1,0 +1,52 @@
+ion-header {
+    ion-toolbar {
+      ion-title {
+        &.ion-text-center {
+          color: #ffffff;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  ion-content {
+    background-color: #007bff;
+  
+    ion-header {
+      ion-toolbar {
+        ion-title {
+          &.ion-title-large {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  
+    .ion-padding {
+      ion-item {
+        ion-label {
+          &.ion-label-floating {
+            color: #ffffff;
+          }
+        }
+  
+        ion-input,
+        ion-select {
+          &::placeholder {
+            color: #ffffff;
+          }
+        }
+      }
+  
+      ion-button {
+        margin-top: 10px;
+        background-color: #ffffff;
+        color: #007bff;
+        font-weight: bold;
+      }
+    }
+  }
+  
