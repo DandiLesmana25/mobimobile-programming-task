@@ -19,9 +19,13 @@ const routes: Routes = [
     path: 'tabhome',
     loadChildren: () => import('./tabhome/tabhome.module').then( m => m.TabhomePageModule)
   },
+  // {
+  //   path: 'tabs',
+  //   loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  // },
   {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+    path: 'tabshistory',
+    loadChildren: () => import('./tabshistory/tabshistory.module').then( m => m.TabshistoryPageModule)
   },
 ];
 

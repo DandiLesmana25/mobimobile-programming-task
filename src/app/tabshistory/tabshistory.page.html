@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> istory</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-list>
+      <ion-list-header>
+        <ion-label>History Scan</ion-label>
+      </ion-list-header>
+      <ion-item *ngFor="let d of data;let i = index">
+        <ion-label>{{ i + 2 }}. {{d.nik}} | {{ d.nama }} | {{ d.type }}</ion-label>
+        <!-- show maps -->
+        <!-- (click)="showMap(d)" -->
+        <ion-button >
+          <ion-icon name="map"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

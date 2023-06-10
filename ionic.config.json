@@ -1,5 +1,7 @@
 {
   "name": "mobile-programming-chalenge",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
